@@ -7,6 +7,7 @@ import { AnimatedBackground } from "../../../../components/AnimatedBackground/An
 
 
 
+
 const Hero = () => {
 
     const StyledHero = styled("div")(({ theme }) => ({
@@ -15,6 +16,12 @@ const Hero = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        [theme.breakpoints.up('xs')]: {
+            PaddingTop: "100px",
+        },
+        [theme.breakpoints.up('md')]: {
+            paddingTop: "100px",
+        },
     }))
 
     const StyledImg = styled("img")(({ theme }) => ({
