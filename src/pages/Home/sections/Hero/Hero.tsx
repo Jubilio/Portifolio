@@ -25,7 +25,7 @@ const Hero = () => {
     }))
 
     const StyledImg = styled("img")(({ theme }) => ({
-        width: "80%",
+        width: "75%",
         borderRadius: "50%",
         border: `1px solid ${theme.palette.primary.contrastText}`
     }))
@@ -52,7 +52,7 @@ const Hero = () => {
                             <Typography color="primary.contrastText" variant="h2" textAlign="center">I'm a GIS Officer</Typography>
                             <Grid2 container display="flex" justifyContent="center" spacing={2} pt={3}>
                                 <Grid2 size={{ xs: 12, md: 4 }} display="flex" justifyContent="center">
-                                    <StyledButton>
+                                    <StyledButton onClick={() =>console.log("Download")}>
                                         <DownloadIcon />
                                         <Typography>
                                             Download CV
@@ -60,7 +60,7 @@ const Hero = () => {
                                     </StyledButton>
                                 </Grid2>
                                 <Grid2 size={{ xs: 12, md: 4 }} display="flex" justifyContent="center">
-                                    <StyledButton>
+                                    <StyledButton onClick={() => console.log("Contact Me")}>
                                         <ContactMailIcon />
                                         <Typography>
                                             Contact Me
